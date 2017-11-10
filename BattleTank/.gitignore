@@ -73,3 +73,13 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+#########################
+# Unreal Generated Files#
+#########################
+*/Build
+*/Binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
+BuildingEscape/Content/StarterContent/
