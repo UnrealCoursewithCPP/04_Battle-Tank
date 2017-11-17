@@ -19,4 +19,9 @@ public:
 	ATank* GetControlledTank() const;
 	
 	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaTime) override; // "override" checks there is indeed a method called "Tick(float DeltaTime)" in the parent class that we are overwriting here.
+
+	// Start the tank moving the barrel so that a shot would hit where thhe crosshair intersects the world.
+	void AimTowardsCrosshair();
 };
