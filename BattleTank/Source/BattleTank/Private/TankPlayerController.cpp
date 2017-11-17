@@ -15,7 +15,7 @@ void ATankPlayerController::BeginPlay() {
 		UE_LOG(LogTemp, Warning, TEXT("PlayerController are posessing: %s"), *(ControlledTank->GetName()));
 	}
 
-	UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
+	//UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
 }
 
 
