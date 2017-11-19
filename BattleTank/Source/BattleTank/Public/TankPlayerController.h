@@ -26,13 +26,17 @@ private:
 	void AimTowardsCrosshair();
 
 	// Return an OUT parameter, true if hit landscape
-	bool GetSightRayHitlocation(FVector& OutHitlocation) const;
+	bool GetSightRayHitLocation(FVector& OutHitlocation) const;
 
 	UPROPERTY(EditAnywhere)
-	float CrossHairXLocation = 0.5;
+		float CrosshairXLocation = 0.5;
 
 	UPROPERTY(EditAnywhere)
-	float CrossHairYLocation = 0.3333;
+		float CrosshairYLocation = 0.3333;
+
+	UPROPERTY(EditAnywhere)
+		float LineTraceRange = 1000000;
 
 	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
+	bool GetLookVectorHitLocation(FVector LookDirection, FVector& HitLocation) const;
 };
